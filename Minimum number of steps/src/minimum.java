@@ -31,7 +31,7 @@ class minimum {
 		    int res=0;
 		    while(counter<a)
 		    {
-		        res+=1;
+		    	res+=1;
 		        for(int j=counter;j<max;j++)
 		        {
 		            if(j>=a)
@@ -47,9 +47,9 @@ class minimum {
 		        
 		        counter=max;
 		        max+=max2;
-		        if(max>a)
-		        	break;
 		        System.out.println("max2 = "+max2+" max = "+max);
+		        if(max>=a)
+		        	break;
 		    }
 		    System.out.println(res);
 		}
